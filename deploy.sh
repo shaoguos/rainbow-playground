@@ -19,6 +19,9 @@ sync_code() {
         --exclude='*.pyc' \
         --exclude='.DS_Store' \
         --exclude='.git' \
+        --exclude='.spec-workflow' \
+        --exclude='.gitignore' \
+        --exclude='README.md' \
         "${SCRIPT_DIR}/" "${REMOTE}:${REMOTE_DIR}/"
     echo "✅ 同步完成"
 }
